@@ -5,7 +5,7 @@ This project is a responsive café website created around the concept of **Beans
 
 The main objective of this project is to **apply what we have learned** in **Web Application Development (WAD)** and **Responsive Web Design (RWD)**. We focused on clean layout design, basic interactivity using **JavaScript**, and making sure that the pages remain functional and readable on both computers and mobile devices.
 
-Aside from the technical side, this project also allowed us to practice **team coordination, task division, maintaining a consistent design, and writing proper documentation**—all of which are important skills in real-world development. Through this activity, we experienced how front-end development progresses step by step: from planning and layout creation to review, polishing, and final presentation.
+Aside from the technical side, this project also allowed us to practice **team coordination, task division, maintaining a consistent design, and writing proper documentation**, all of which are important skills in real-world development. Through this activity, we experienced how front-end development progresses step by step: from planning and layout creation to review, polishing, and final presentation.
 
 ---
 
