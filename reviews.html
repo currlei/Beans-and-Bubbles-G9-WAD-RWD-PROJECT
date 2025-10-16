@@ -95,15 +95,79 @@
           </div>
            
         </div>
-
-        <!-- Navigation -->
-        <button class="prev" aria-label="Previous review">&#10094;</button>
-        <button class="next" aria-label="Next review">&#10095;</button>
       </div>
     </section>
   </main>
 
   <!-- Main JS -->
   <script src="script.js"></script>
+  <script>
+    (function() {
+      const slider = document.querySelector('.review-slider');
+      if (!slider) return;
+      const track = slider.querySelector('.slides');
+      const cards = Array.from(track.children);
+      if (!track || cards.length === 0) return;
+
+      let index = 0;
+      let startX = 0;
+      let deltaX = 0;
+      let dragging = false;
+      let width = slider.clientWidth;
+
+      function setWidth() {
+        width = slider.clientWidth;
+        snap();
+      }
+
+      function snap() {
+        track.style.transition = 'transform 0.35s ease';
+        track.style.transform = `translateX(${-index * width}px)`;
+      }
+
+      function onDown(clientX) {
+        dragging = true;
+        startX = clientX;
+        deltaX = 0;
+        track.style.transition = 'none';
+      }
+
+      function onMove(clientX) {
+        if (!dragging) return;
+        deltaX = clientX - startX;
+        track.style.transform = `translateX(${-(index * width) + deltaX}px)`;
+      }
+
+      function onUp() {
+        if (!dragging) return;
+        dragging = false;
+        const threshold = Math.max(60, width * 0.18);
+        if (deltaX > threshold && index > 0) index--;
+        else if (deltaX < -threshold && index < cards.length - 1) index++;
+        snap();
+      }
+
+      // Mouse events
+      slider.addEventListener('mousedown', e => onDown(e.clientX));
+      window.addEventListener('mousemove', e => onMove(e.clientX));
+      window.addEventListener('mouseup', onUp);
+
+      // Touch events
+      slider.addEventListener('touchstart', e => onDown(e.touches[0].clientX), { passive: true });
+      slider.addEventListener('touchmove', e => onMove(e.touches[0].clientX), { passive: true });
+      slider.addEventListener('touchend', onUp);
+
+      // Accessibility: allow keyboard arrow navigation when focused
+      slider.tabIndex = 0;
+      slider.addEventListener('keydown', e => {
+        if (e.key === 'ArrowRight' && index < cards.length - 1) { index++; snap(); }
+        if (e.key === 'ArrowLeft' && index > 0) { index--; snap(); }
+      });
+
+      window.addEventListener('resize', setWidth);
+      // Initial snap to ensure correct width
+      snap();
+    })();
+  </script>
 </body>
 </html>
