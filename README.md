@@ -1,4 +1,4 @@
-[README (2).md](https://github.com/user-attachments/files/22954868/README.2.md)
+
 # **Beans & Bubbles — Café Website**
 
 This project is a responsive café website created around the concept of **Beans & Bubbles**, a fictional café brand made for academic purposes. The goal of the website is to represent how a small café could present its services online in a simple, organized, and user-friendly way. Instead of just building random pages, we designed it as if we were preparing an actual website for a real client.
