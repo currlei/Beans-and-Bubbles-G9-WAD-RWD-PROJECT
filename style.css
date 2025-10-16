@@ -536,50 +536,45 @@ img{
 /* Menu */
 
 .menu-grid {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  justify-content: center;     
-  align-items: start;
+display: grid;
+gap: 20px;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+justify-content: center;
+align-items: start;
 }
+
 
 .menu-grid .menu-item {
-  width: 100%;
-  max-width: clamp(260px, 34vw, 520px);  
-  justify-self: center;                
-  margin-inline: auto;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+width: 100%;
+max-width: clamp(260px, 34vw, 520px);
+justify-self: center;
+margin-inline: auto;
+transition: transform 0.2s ease, box-shadow 0.2s ease;
+height: 400px; /* fixed height for consistency */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 }
 
-/* Card internals: keep images responsive and limited */
+
 .menu-grid .menu-item img {
-  width: 100%;
-  height: auto;
-  max-height: 360px;
-  object-fit: cover;
-  border-radius: 12px;
-  display: block;
+width: 100%;
+height: 200px; /* fixed image height */
+object-fit: cover;
+border-radius: 12px;
+display: block;
 }
 
-.menu-grid.single-result {
-  grid-template-columns: minmax(220px, clamp(320px, 38vw, 640px));
-  justify-content: center;   /* center the single column in the container */
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 12px;
-  padding-right: 12px;
-}
 
-/* Make the single visible item fill that column nicely */
 .menu-grid.single-result .menu-item {
-  max-width: 100%; /* fill the single column (which itself is capped) */
+height: 400px;
 }
 
-/* Slight visual tweak: scale image a bit more comfortably for single result */
+
 .menu-grid.single-result .menu-item img {
-  max-height: 520px;
+height: 200px;
 }
+
 
 /* Accessibility: keep consistent spacing for the no-results box */
 .menu-search-no-results {
