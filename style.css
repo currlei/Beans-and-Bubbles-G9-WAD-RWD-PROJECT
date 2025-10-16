@@ -352,7 +352,7 @@ img{
 .about-details .section-title {
   padding: 0;
   margin-bottom: 12px;
-  text-align: center; /* ✅ changed from left to center */
+  text-align: center;
 }
 
 .about-details .text {
@@ -360,7 +360,7 @@ img{
   margin: 12px 0 20px;
   font-size: 1.05rem;
   color: #3b141c;
-  text-align: center; /* ✅ added */
+  text-align: center; 
 }
 
 /* social links */
@@ -368,7 +368,7 @@ img{
   display: flex;
   gap: 18px;
   align-items: center;
-  justify-content: center; /* ✅ added */
+  justify-content: center; 
 }
 
 .about-section .social-link-list .social-link {
@@ -403,7 +403,7 @@ img{
 
   .about-image-frame {
     max-width: 520px;
-    aspect-ratio: 4 / 3; /* slightly rectangular on smaller screens */
+    aspect-ratio: 4 / 3;
   }
 
   .about-nav {
@@ -429,7 +429,7 @@ img{
   .about-image-frame {
     position: relative;
     width: 100%;
-    aspect-ratio: 4 / 3; /* maintains consistent shape */
+    aspect-ratio: 4 / 3; 
     overflow: hidden;
     border-radius: 12px;
   }
@@ -550,7 +550,7 @@ max-width: clamp(260px, 34vw, 520px);
 justify-self: center;
 margin-inline: auto;
 transition: transform 0.2s ease, box-shadow 0.2s ease;
-height: 400px; /* fixed height for consistency */
+height: 400px; 
 display: flex;
 flex-direction: column;
 justify-content: space-between;
@@ -559,7 +559,7 @@ justify-content: space-between;
 
 .menu-grid .menu-item img {
 width: 100%;
-height: 200px; /* fixed image height */
+height: 200px; 
 object-fit: cover;
 border-radius: 12px;
 display: block;
@@ -779,7 +779,7 @@ height: 200px;
   font-weight: 600;
 }
 
-/* Accessibility: visually-hidden helper (if you add live region) */
+
 .visually-hidden {
   position: absolute !important;
   height: 1px;
@@ -871,8 +871,8 @@ height: 200px;
 .team-member img {
   width: 180px;
   height: 180px;
-  display: block;           /* make the image a block so margin auto can center it */
-  margin: 0 auto 20px;      /* center horizontally, keep the bottom spacing */
+  display: block;           
+  margin: 0 auto 20px;      
   border-radius: 50%;
   object-fit: cover;
 }
@@ -1636,3 +1636,4 @@ footer .social-links a:focus {
     font-size: 0.85rem;
   }
 }
+
