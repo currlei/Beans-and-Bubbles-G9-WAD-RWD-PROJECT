@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beans & Bubbles — Reviews</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HEADER  -->
+ <header>
+    <nav class="nav-bar section-content">
+      <a href="index.html" class="nav-logo">
+         <img src="images/logo.png" alt="Beans & Bubbles logo" class="logo-img">
+        <h2 class="logo-text">Beans & Bubbles</h2>
+      </a>
+
+      <!-- mobile-close button placed inside nav-menu for accessibility -->
+      <ul class="nav-menu">
+        <button id="menu-close-button" class="fas fa-times" aria-label="Close menu"></button>
+
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+        <li class="nav-item"><a href="team.html" class="nav-link">Our Team</a></li>
+        <li class="nav-item"><a href="reviews.html" class="nav-link">Reviews</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- mobile-open button -->
+      <button id="menu-open-button" class="fas fa-bars" aria-label="Open menu"></button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- REVIEWS -->
+    <section class="reviews" id="reviews">
+      <h2>What Our Customers Say</h2>
+      <div class="review-slider">
+        <div class="slides">
+          <div class="review-card">
+            <img src="images/mel.jpg" alt="Customer 1"/>
+            <h3>Mel Magdaraog</h3>
+            <p class="role">Regular Customer</p>
+            <p class="review-text">“The coffee is always fresh and full of flavor! I love the cozy atmosphere and the kind baristas.”</p>
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+          </div>
+
+          <div class="review-card">
+            <img src="images/dylan.jpg" alt="Customer 2"/>
+            <h3>Leander Dylan Broñola</h3>
+            <p class="role">Traveler</p>
+            <p class="review-text">“I stopped by on my way to Pampanga — their pastries are heavenly, and the staff are incredibly welcoming!”</p>
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          </div>
+
+           <div class="review-card">
+            <img src="images/marzo.jpg" alt="Customer 3"/>
+            <h3>Lenard Dave Marzo</h3>
+            <p class="role">Coffee Enthusiast</p>
+            <p class="review-text">“Their latte art is a masterpiece! It’s my favorite spot for studying and catching up with friends.”</p>
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+          </div>
+
+
+          
+          <div class="review-card">
+            <img src="images/buen.jpg" alt="Customer 2"/>
+            <h3>Louise Buen</h3>
+            <p class="role">Traveler</p>
+            <p class="review-text">“I stopped by on my way to Pampanga — their pastries are heavenly, and the staff are incredibly welcoming!”</p>
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          </div>
+
+          <div class="review-card">
+            <img src="images/steph.jpg" alt="Customer 3"/>
+            <h3>Anne Stephanne Buenaflor</h3>
+            <p class="role">Coffee Enthusiast</p>
+            <p class="review-text">“Their latte art is a masterpiece! It’s my favorite spot for studying and catching up with friends.”</p>
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+          </div>
+
+          
+          <div class="review-card">
+            <img src="images/denmark.jpg" alt="Customer 2"/>
+            <h3>Denmark Bartolome</h3>
+            <p class="role">Traveler</p>
+            <p class="review-text">“I stopped by on my way to Pampanga — their pastries are heavenly, and the staff are incredibly welcoming!”</p>
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          </div>
+           
+        </div>
+
+        <!-- Navigation -->
+        <button class="prev" aria-label="Previous review">&#10094;</button>
+        <button class="next" aria-label="Next review">&#10095;</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Main JS -->
+  <script src="script.js"></script>
+</body>
+</html>

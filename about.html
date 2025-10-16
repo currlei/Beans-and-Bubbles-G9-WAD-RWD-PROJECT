@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beans & Bubbles — About</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HEADER  -->
+ <header>
+    <nav class="nav-bar section-content">
+      <a href="index.html" class="nav-logo">
+         <img src="images/logo.png" alt="Beans & Bubbles logo" class="logo-img">
+        <h2 class="logo-text">Beans & Bubbles</h2>
+      </a>
+
+      <!-- mobile-close button placed inside nav-menu for accessibility -->
+      <ul class="nav-menu">
+        <button id="menu-close-button" class="fas fa-times" aria-label="Close menu"></button>
+
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link" aria-current="page">About</a></li>
+        <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+        <li class="nav-item"><a href="team.html" class="nav-link">Our Team</a></li>
+        <li class="nav-item"><a href="reviews.html" class="nav-link">Reviews</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- mobile-open button -->
+      <button id="menu-open-button" class="fas fa-bars" aria-label="Open menu"></button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ABOUT -->
+    <section id="about" class="about-section" aria-labelledby="about-heading" role="region">
+      <div class="section-content about-inner">
+        <!-- Image slider / gallery -->
+        <div class="about-image-wrap" aria-hidden="false">
+          <div class="about-image-frame" aria-live="polite">
+            <button id="about-prev" class="about-nav about-nav-prev" aria-controls="about-main-image" aria-label="Previous image">
+              <span aria-hidden="true" class="fas fa-chevron-left"></span>
+            </button>
+
+            <!-- main image: JS swaps src/srcset -->
+            <img
+              id="about-main-image"
+              class="about-main-image"
+              src="images/about/cold-brew.jpg"
+              alt="Interior of Beans & Bubbles café"
+              width="800"
+              height="800"
+              loading="lazy"
+            />
+
+            <button id="about-next" class="about-nav about-nav-next" aria-controls="about-main-image" aria-label="Next image">
+              <span aria-hidden="true" class="fas fa-chevron-right"></span>
+            </button>
+          </div>
+
+          <div id="about-indicators" class="about-indicators" role="tablist" aria-label="About section images">
+            <!-- indicator buttons injected by JS -->
+          </div>
+        </div>
+
+        <!-- About text -->
+        <div class="about-details">
+          <h2 id="about-heading" class="section-title">About Us</h2>
+          <p class="text">Beans & Bubbles was created for people who believe every cup should tell a story. We combine freshly brewed coffee, handcrafted drinks, and a cozy space where memories are made. Whether you’re here to unwind, study, or share laughter with friends, we’ll make every moment feel warm and welcoming.</p>
+
+          <div class="social-link-list" aria-label="Social links">
+            <a href="https://www.facebook.com/itsmelorein/" class="social-link"  target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/curr_lei/" class="social-link"  target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/curr_lei" class="social-link"  target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
