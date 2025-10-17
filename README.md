@@ -19,7 +19,7 @@ The website includes several pages: **Home, About, Menu, Team, Reviews, and Cont
 
 | **Member Name**         | **Contribution** |
 |------------------------|------------------|
-| **Lorein Manluctao**   | Focused on **HTML and CSS**, assisted in JavaScript, and handled **project documentation**. |
+| **Lorein Manluctao**   | Focused on **HTML and CSS**, assisted in **JavaScript**, and handled **project documentation**. |
 | **Daniel Casimiro**    | Worked on **JavaScript features and code polishing** to improve interaction. |
 | **JR Balmaceda**       | Assisted in **HTML structuring and CSS styling**, helping keep the design consistent. |
 
