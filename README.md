@@ -86,23 +86,24 @@ The website includes several pages: **Home, About, Menu, Team, Reviews, and Cont
 
 ---
 
-## **Folder Structure**
+## Project Structure
 
 ```
 beans-and-bubbles/
 ├── HTML/
-│ ├── index.html
-│ ├── about.html
-│ ├── menu.html
-│ ├── team.html
-│ ├── reviews.html
-│ └── contact.html
-├── style.css
-├── script.js
-└── images/
+│   ├── index.html       # Landing page
+│   ├── about.html       # About the café + image slider
+│   ├── menu.html        # Filterable & responsive menu
+│   ├── team.html        # Team showcase grid
+│   ├── reviews.html     # Auto-sliding customer reviews
+│   └── contact.html     # Contact form with rating + café schedule
+├── style.css            # Main styling, responsive + animated elements
+├── script.js            # Navigation, sliders, search filter, interactions
+└── images/              # Assets used across pages
 ```
 
 ---
+
 
 ## **Credits**
 
