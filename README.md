@@ -1,5 +1,4 @@
-# Live Preview  
-[![Live Preview](https://currlei.github.io/Beans-and-Bubbles-G9-WAD-RWD-PROJECT/)
+
 
 # **Beans & Bubbles — Café Website**
 
