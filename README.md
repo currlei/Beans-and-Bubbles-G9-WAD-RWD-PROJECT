@@ -70,15 +70,6 @@ The website includes several pages: **Home, About, Menu, Team, Reviews, and Cont
 
 ---
 
-## **Quick Deployment Guide (GitHub Pages)**
-
-1. Upload the project to a GitHub repository  
-2. Go to **Settings → Pages**  
-3. Under **Source**, select `main` branch and root folder  
-4. Save and wait for the live link to generate  
-
----
-
 ## **Folder Structure**
 
 ```
