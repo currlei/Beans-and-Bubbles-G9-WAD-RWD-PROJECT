@@ -41,18 +41,7 @@ The website includes several pages: **Home, About, Menu, Team, Reviews, and Cont
 - Team page displaying member profiles with basic descriptions  
 - Contact section with input fields where users can send feedback or suggestions about the café concept  
 - Smooth Scroll Reveal Effects  
-- Optimized Animations for Performance
-
----
-
-| Page           | Description                                                    |
-| -------------- | -------------------------------------------------------------- |
-| `index.html`   | Hero landing page with call-to-action buttons                  |
-| `about.html`   | Café story + auto-sliding image gallery                        |
-| `menu.html`    | Menu grid with **live search filter** and accessibility labels |
-| `team.html`    | Team member cards with social media links                      |
-| `reviews.html` | Sliding review carousel with progress indicator                |
-| `contact.html` | Form validation, star rating & operating hours                 |
+- Optimized Animations for Performance  
 
 ---
 
@@ -68,48 +57,59 @@ The website includes several pages: **Home, About, Menu, Team, Reviews, and Cont
 
 ---
 
-## **How to Run the Project**
+---
+
+## How to Use / Run Locally
 
 1. **Clone the repository**
-   \`\`\`bash
+   ```bash
    git clone https://github.com/currlei/Beans-and-Bubbles-G9-WAD-RWD-PROJECT.git
-   \`\`\`
+   ```
 
 2. **Open the folder**
-   \`\`\`bash
+   ```bash
    cd Beans-and-Bubbles-G9-WAD-RWD-PROJECT
-   \`\`\`
+   ```
 
 3. **Open the website**
-   - Go to the \`HTML/\` folder  
-   - Double-click \`index.html\` to open it in your browser  
-   **No server or backend required — pure HTML, CSS, JS.**
+   - Go to the `HTML/` folder  
+   - Double-click `index.html` to open it in your browser  
+    **No server or backend required — pure HTML, CSS, JS.**
 
 ---
 
-## **Project Structure**
+## **Quick Deployment Guide (GitHub Pages)**
 
-\`\`\`
+1. Upload the project to a GitHub repository  
+2. Go to **Settings → Pages**  
+3. Under **Source**, select `main` branch and root folder  
+4. Save and wait for the live link to generate  
+
+---
+
+## **Folder Structure**
+
+```
 beans-and-bubbles/
-├── html/
-│   ├── index.html
-│   ├── about.html
-│   ├── menu.html
-│   ├── team.html
-│   ├── reviews.html
-│   └── contact.html
+├── index.html
+├── about.html
+├── menu.html
+├── team.html
+├── reviews.html
+├── contact.html
 ├── style.css
 ├── script.js
 └── images/
-\`\`\`
+```
 
 ---
 
 ## **Credits**
 
-Designed & Developed by: **Lorein Manluctao**, **Daniel Casimiro**, & **JR Balmaceda** — students from **La Verdad Christian College**, taking **Bachelor of Science and Information Systems 2**.
+Designed & Developed by: **Lorein Manluctao**, **Daniel Casimiro**, & **JR Balmaceda** — students from **La Verdad Christian College**, taking **BSIS-2**.
 
-This website was created as part of our **Midterm Project** for **Web Application Development (WAD)** and **Responsive Web Design (RWD)**. Our goal was not only to build a working website but also to apply our learning in **HTML, CSS, and JavaScript**, while practicing **teamwork and proper documentation**.
+This website was created as part of our **Midterm Project** for **Web Application Development (WAD)** and **Responsive Web Design (RWD)**.  
+Our goal was not only to build a working website but also to apply our learning in **HTML, CSS, and JavaScript**, while practicing **teamwork and proper documentation**.
 
 ---
 
