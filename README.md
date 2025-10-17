@@ -77,14 +77,10 @@ beans-and-bubbles/
 
 ## **Credits**
 
-This project was developed by **Lorein Manluctao**, **Daniel Casimiro**, and **JR Balmaceda** from **Group 9 — BSIS-2** at **La Verdad Christian College**.  
-It was created as part of our **Midterm Project** for **Web Application Development (WAD)** and **Responsive Web Design (RWD)**.  
-Our goal was not only to build a working website but also to apply our learning in **HTML, CSS, and JavaScript**, while practicing **teamwork and proper documentation**.
+This project was developed by **Lorein Manluctao**, **Daniel Casimiro**, and **JR Balmaceda** from **Group 9 — BSIS-2** at **La Verdad Christian College**.  It was created as part of our **Midterm Project** for **Web Application Development (WAD)** and **Responsive Web Design (RWD)**.  Our goal was not only to build a working website but also to apply our learning in **HTML, CSS, and JavaScript**, while practicing **teamwork and proper documentation**.
 
 ---
 
 ## **Acknowledgment**
 
-We would like to thank our instructors, **Mr. Jehu Casimiro** and **Mr. Carlo Soleta**, for their guidance throughout this project in WAD and RWD.  
-We also appreciate the support and feedback from our classmates during development.  
-This project helped us improve both our technical skills and our ability to work as a team.
+We would like to thank our instructors, **Mr. Jehu Casimiro** and **Mr. Carlo Soleta**, for their guidance throughout this project in WAD and RWD.  We also appreciate the support and feedback from our classmates during development. This project helped us improve both our technical skills and our ability to work as a team.
