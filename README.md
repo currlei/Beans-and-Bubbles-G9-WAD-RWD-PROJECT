@@ -44,6 +44,7 @@ The website includes several pages: **Home, About, Menu, Team, Reviews, and Cont
 - Optimized Animations for Performance
 
 ---
+
 | Page           | Description                                                    |
 | -------------- | -------------------------------------------------------------- |
 | `index.html`   | Hero landing page with call-to-action buttons                  |
@@ -53,6 +54,7 @@ The website includes several pages: **Home, About, Menu, Team, Reviews, and Cont
 | `reviews.html` | Sliding review carousel with progress indicator                |
 | `contact.html` | Form validation, star rating & operating hours                 |
 
+---
 
 ## **Technologies Used**
 
@@ -69,27 +71,27 @@ The website includes several pages: **Home, About, Menu, Team, Reviews, and Cont
 ## **How to Run the Project**
 
 1. **Clone the repository**
-   ```bash
+   \`\`\`bash
    git clone https://github.com/currlei/Beans-and-Bubbles-G9-WAD-RWD-PROJECT.git
-   ```
+   \`\`\`
 
 2. **Open the folder**
-   ```bash
+   \`\`\`bash
    cd Beans-and-Bubbles-G9-WAD-RWD-PROJECT
-   ```
+   \`\`\`
 
 3. **Open the website**
-   - Go to the `HTML/` folder  
-   - Double-click `index.html` to open it in your browser  
-    **No server or backend required — pure HTML, CSS, JS.**
-```
+   - Go to the \`HTML/\` folder  
+   - Double-click \`index.html\` to open it in your browser  
+   **No server or backend required — pure HTML, CSS, JS.**
 
 ---
 
-## Project Structure
+## **Project Structure**
 
+\`\`\`
 beans-and-bubbles/
-├── HTML/
+├── html/
 │   ├── index.html
 │   ├── about.html
 │   ├── menu.html
@@ -99,10 +101,9 @@ beans-and-bubbles/
 ├── style.css
 ├── script.js
 └── images/
-
+\`\`\`
 
 ---
-
 
 ## **Credits**
 
