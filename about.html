@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beans & Bubbles — About</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER  -->
+    <header>
+      <nav class="nav-bar section-content">
+        <a href="index.html" class="nav-logo">
+          <img
+            src="images/logo.png"
+            alt="Beans & Bubbles logo"
+            class="logo-img"
+          />
+          <h2 class="logo-text">Beans & Bubbles</h2>
+        </a>
+
+        <!-- mobile-close button placed inside nav-menu for accessibility -->
+        <ul class="nav-menu">
+          <button
+            id="menu-close-button"
+            class="fas fa-times"
+            aria-label="Close menu"
+          ></button>
+
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link" aria-current="page">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="menu.html" class="nav-link">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="team.html" class="nav-link">Our Team</a>
+          </li>
+          <li class="nav-item">
+            <a href="reviews.html" class="nav-link">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <!-- mobile-open button -->
+        <button
+          id="menu-open-button"
+          class="fas fa-bars"
+          aria-label="Open menu"
+        ></button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ABOUT -->
+      <section
+        id="about"
+        class="about-section"
+        aria-labelledby="about-heading"
+        role="region"
+      >
+        <div class="section-content about-inner">
+          <!-- Image slider / gallery -->
+          <div class="about-image-wrap" aria-hidden="false">
+            <div class="about-image-frame" aria-live="polite">
+              <button
+                id="about-prev"
+                class="about-nav about-nav-prev"
+                aria-controls="about-main-image"
+                aria-label="Previous image"
+              >
+                <span aria-hidden="true" class="fas fa-chevron-left"></span>
+              </button>
+
+              <!-- main image: JS swaps src/srcset -->
+              <img
+                id="about-main-image"
+                class="about-main-image"
+                src="images/about/cold-brew.jpg"
+                alt="Interior of Beans & Bubbles café"
+                width="800"
+                height="800"
+                loading="lazy"
+              />
+
+              <button
+                id="about-next"
+                class="about-nav about-nav-next"
+                aria-controls="about-main-image"
+                aria-label="Next image"
+              >
+                <span aria-hidden="true" class="fas fa-chevron-right"></span>
+              </button>
+            </div>
+
+            <div
+              id="about-indicators"
+              class="about-indicators"
+              role="tablist"
+              aria-label="About section images"
+            >
+              <!-- indicator buttons injected by JS -->
+            </div>
+          </div>
+
+          <!-- About text -->
+          <div class="about-details">
+            <h2 id="about-heading" class="section-title">About Us</h2>
+            <p class="text">
+              Beans & Bubbles was created for people who believe every cup
+              should tell a story. We combine freshly brewed coffee, handcrafted
+              drinks, and a cozy space where memories are made. Whether you’re
+              here to unwind, study, or share laughter with friends, we’ll make
+              every moment feel warm and welcoming.
+            </p>
+
+            <div class="social-link-list" aria-label="Social links">
+              <a
+              href="https://www.facebook.com/people/Beans-Bubbles-Caf%C3%A9/61582516883298/"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a
+              href="https://www.instagram.com/beans.and.bubbles/"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+              href="https://x.com/elle_lorelei02?s=21"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container section-content">
+        <div class="footer-column">
+          <h3>Beans & Bubbles</h3>
+          <p>
+            Delightfully brewed drinks and cozy moments. Stop by for a
+            handcrafted beverage and stay for the atmosphere.
+          </p>
+          <div class="social-links" aria-label="Social links">
+            <a
+              href="https://www.facebook.com/people/Beans-Bubbles-Caf%C3%A9/61582516883298/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/beans.and.bubbles/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://x.com/elle_lorelei02?s=21"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>About our Website</h3>
+          <p>
+            This website was created by Group 9 of BSIS-2 as part of our
+            project. It showcases our café concept, Beans & Bubbles, featuring
+            its menu, team, customer reviews, and contact information. The goal
+            of this site is to provide visitors with a warm, welcoming glimpse
+            of our café experience through a simple, responsive, and
+            user-friendly design.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <p>La Verdad Christian College<br />Apalit, Pampanga, 2016</p>
+          <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+          <p>
+            Email:
+            <a href="mailto:hello@beansandbubbles.example"
+              >beansandbubbles@gmail.com</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Beans & Bubbles. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
