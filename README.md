@@ -88,19 +88,18 @@ The website includes several pages: **Home, About, Menu, Team, Reviews, and Cont
 
 ## Project Structure
 
-```
 beans-and-bubbles/
-├── html/
-│   ├── index.html       
-│   ├── about.html      
-│   ├── menu.html       
-│   ├── team.html        
-│   ├── reviews.html    
-│   └── contact.html     
-├── style.css            
-├── script.js            
-└── images/              
-```
+├── HTML/
+│   ├── index.html
+│   ├── about.html
+│   ├── menu.html
+│   ├── team.html
+│   ├── reviews.html
+│   └── contact.html
+├── style.css
+├── script.js
+└── images/
+
 
 ---
 
