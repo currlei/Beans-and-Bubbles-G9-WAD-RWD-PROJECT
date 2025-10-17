@@ -32,9 +32,23 @@ The website includes several pages: **Home, About, Menu, Team, Reviews, and Cont
 - Menu page displaying items in a simple and organized format  
 - Reviews section showcasing sample customer feedback and suggestions  
 - Team page displaying member profiles with basic descriptions  
-- Contact section with input fields where users can send feedback or suggestions about the café concept  
+- Contact section with input fields where users can send feedback or suggestions about the café concept
+- Smooth Scroll Reveal Effects
+- Optimized Animations for Performance
 
 ---
+
+##  Technologies Used
+
+  Technology                    Purpose
+  ----------------------------- ----------------------------------------
+  **HTML5**                     Content structure and semantic layout
+  **CSS3 (Flexbox & Grid)**     Responsive design and visual styling
+  **JavaScript (Vanilla JS)**   DOM interactions, sliders, validations
+  **Font Awesome**              Icons and UI enhancements
+  **Google Fonts**              Typography styling
+
+------------------------------------------------------------------------
 
 ## **How to Run the Project**
 
@@ -76,11 +90,28 @@ beans-and-bubbles/
 ---
 
 ## **Credits**
+---
+Designed & Developed by: **Lorein Manluctao**, **Daniel Casimiro**, & **JR Bamaceda** — students from **La Verdad Christian College**, taking **BSIS-2**.
 
-This project was developed by **Lorein Manluctao**, **Daniel Casimiro**, and **JR Balmaceda** from **Group 9 — BSIS-2** at **La Verdad Christian College**.  It was created as part of our **Midterm Project** for **Web Application Development (WAD)** and **Responsive Web Design (RWD)**.  Our goal was not only to build a working website but also to apply our learning in **HTML, CSS, and JavaScript**, while practicing **teamwork and proper documentation**.
+---
+
+This website was created as part of our **Midterm Project** for **Web Application Development (WAD)** and **Responsive Web Design (RWD)**.  
+Our goal was not only to build a working website but also to apply our learning in **HTML, CSS, and JavaScript**, while practicing **teamwork and proper documentation**.
 
 ---
 
 ## **Acknowledgment**
 
 We would like to thank our instructors, **Mr. Jehu Casimiro** and **Mr. Carlo Soleta**, for their guidance throughout this project in WAD and RWD.  We also appreciate the support and feedback from our classmates during development. This project helped us improve both our technical skills and our ability to work as a team.
+
+## 📸 Screenshots
+
+```md
+![Home Page](images/homepage.png)
+![About](images/about.png)
+![Menu](images/menu.png)
+![Our Team](images/team.png)
+![Reviews](images/reviews.png)
+![Contact](images/contact.png)
+```
+
