@@ -1,5 +1,11 @@
-#  Live Preview
+# 🚀 Live Preview
+[![Live Preview](https://img.shields.io/badge/Live%20Preview-Click%20Here-brightgreen?style=for-the-badge)](https://currlei.github.io/Beans-and-Bubbles-G9-WAD-RWD-PROJECT/HTML/index.html)
+
+# 🚀 Live Preview
 https://currlei.github.io/Beans-and-Bubbles-G9-WAD-RWD-PROJECT/
+
+# 🚀 Live Preview
+[![Live Demo](https://img.shields.io/badge/Live%20Preview-Click%20Here-green)](https://currlei.github.io/Beans-and-Bubbles-G9-WAD-RWD-PROJECT)
 
 # **Beans & Bubbles — Café Website**
 
