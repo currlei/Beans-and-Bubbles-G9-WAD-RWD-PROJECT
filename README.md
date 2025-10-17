@@ -91,16 +91,15 @@ The website includes several pages: **Home, About, Menu, Team, Reviews, and Cont
 
 ```
 beans-and-bubbles/
-├── HTML/
-│   ├── index.html       
-│   ├── about.html       
-│   ├── menu.html        
-│   ├── team.html       
-│   ├── reviews.html    
-│   └── contact.html     
-├── style.css           
-├── script.js            
-└── images/ 
+├── index.html
+├── about.html
+├── menu.html
+├── team.html
+├── reviews.html
+├── contact.html
+├── style.css
+├── script.js
+└── images/
 ```
 
 ---
