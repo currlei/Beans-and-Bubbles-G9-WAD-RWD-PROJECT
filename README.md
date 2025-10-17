@@ -89,10 +89,9 @@ beans-and-bubbles/
 
 ## **Credits**
 
-Designed & Developed by: **Lorein Manluctao**, **Daniel Casimiro**, & **JR Balmaceda** — students from **La Verdad Christian College**, taking **BSIS-2**.
+Designed & Developed by: **Lorein Manluctao**, **Daniel Casimiro**, & **JR Balmaceda** — students from **La Verdad Christian College**, taking **Bachelor of Science and Information Systems 2**.
 
-This website was created as part of our **Midterm Project** for **Web Application Development (WAD)** and **Responsive Web Design (RWD)**.  
-Our goal was not only to build a working website but also to apply our learning in **HTML, CSS, and JavaScript**, while practicing **teamwork and proper documentation**.
+This website was created as part of our **Midterm Project** for **Web Application Development (WAD)** and **Responsive Web Design (RWD)**. Our goal was not only to build a working website but also to apply our learning in **HTML, CSS, and JavaScript**, while practicing **teamwork and proper documentation**.
 
 ---
 
