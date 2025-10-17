@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beans & Bubbles — Menu</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link visually-hidden" href="#menu">Skip to menu</a>
+
+  <!-- HEADER / BANNER -->
+  <header>
+    <nav class="nav-bar section-content">
+      <a href="index.html" class="nav-logo">
+         <img src="images/logo.png" alt="Beans & Bubbles logo" class="logo-img">
+        <h2 class="logo-text">Beans & Bubbles</h2>
+      </a>
+
+      <!-- mobile-close button placed inside nav-menu for accessibility -->
+      <ul class="nav-menu" role="list">
+        <li>
+          <button id="menu-close-button" class="fas fa-times" aria-label="Close menu" type="button"></button>
+        </li>
+
+        <li class="nav-item" role="listitem"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item" role="listitem"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item" role="listitem"><a href="menu.html" class="nav-link" aria-current="page">Menu</a></li>
+        <li class="nav-item" role="listitem"><a href="team.html" class="nav-link">Our Team</a></li>
+        <li class="nav-item" role="listitem"><a href="reviews.html" class="nav-link">Reviews</a></li>
+        <li class="nav-item" role="listitem"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- mobile-open button -->
+      <button id="menu-open-button" class="fas fa-bars" aria-label="Open menu" type="button"></button>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- MENU SECTION -->
+    <section id="menu" class="menu container section-content" role="region" aria-labelledby="menu-title">
+      <h2 id="menu-title" class="section-title">Our Menu</h2>
+
+      <!-- Search form: -->
+      <form id="menuSearchForm" class="menu-search-wrapper" role="search" aria-label="Search the menu">
+        <label for="menuSearch" class="visually-hidden">Search menu items</label>
+        <input
+          type="search"
+          id="menuSearch"
+          class="menu-search"
+          name="q"
+          placeholder="Search the flavor that you want"
+          aria-label="Search menu items"
+          aria-controls="menuGrid"
+          autocomplete="off"
+        />
+
+        
+
+        <button id="menuSearchBtn" class="menu-search-button" type="submit" aria-label="Search">
+          <i class="fas fa-magnifying-glass" aria-hidden="true"></i>
+          <span class="visually-hidden">Search</span>
+        </button>
+      </form>
+
+      <!-- Live region for screen readers -->
+      <div id="menuSearchLive" class="visually-hidden" aria-live="polite" aria-atomic="true"></div>
+
+      <!-- No results message (status) -->
+      <div id="menuNoResults" class="menu-search-no-results" role="status" hidden>
+        No items found — try different keywords.
+      </div>
+
+      <!-- Menu list -->
+      <ul id="menuGrid" class="menu-grid" role="list" aria-labelledby="menu-title">
+  <li class="menu-item" role="listitem" data-flavors="bitter,rich,bold,espresso">
+    <article class="menu-card" aria-labelledby="item-espresso-title">
+      <figure>
+        <img src="images/espresso.jpg" alt="Espresso" width="320" height="200" />
+        <figcaption class="visually-hidden">Espresso</figcaption>
+      </figure>
+      <div class="menu-card-body">
+        <h3 id="item-espresso-title">Espresso</h3>
+        <p>Rich, bold, and perfectly brewed for true coffee lovers.</p>
+      </div>
+      <div class="menu-card-price"><span>₱120</span></div>
+    </article>
+  </li>
+
+  <li class="menu-item" role="listitem" data-flavors="creamy,milky,sweet,latte">
+    <article class="menu-card" aria-labelledby="item-latte-title">
+      <figure>
+        <img src="images/caramel-latte.jpg" alt="Latte" width="320" height="200" />
+        <figcaption class="visually-hidden">Latte</figcaption>
+      </figure>
+      <div class="menu-card-body">
+        <h3 id="item-latte-title">Latte</h3>
+        <p>Smooth espresso paired with creamy steamed milk.</p>
+      </div>
+      <div class="menu-card-price"><span>₱150</span></div>
+    </article>
+  </li>
+
+  <li class="menu-item" role="listitem" data-flavors="foam,balanced,comforting,cappuccino">
+    <article class="menu-card" aria-labelledby="item-cappuccino-title">
+      <figure>
+        <img src="images/cup-cappuccino.jpg" alt="Cappuccino" width="320" height="200" />
+        <figcaption class="visually-hidden">Cappuccino</figcaption>
+      </figure>
+      <div class="menu-card-body">
+        <h3 id="item-cappuccino-title">Cappuccino</h3>
+        <p>A comforting blend of espresso, milk, and airy foam.</p>
+      </div>
+      <div class="menu-card-price"><span>₱140</span></div>
+    </article>
+  </li>
+
+  <li class="menu-item" role="listitem" data-flavors="earthy,green,umami,matcha">
+    <article class="menu-card" aria-labelledby="item-matcha-title">
+      <figure>
+        <img src="images/matcha-latte.jpg" alt="Matcha Latte" width="320" height="200" />
+        <figcaption class="visually-hidden">Matcha Latte</figcaption>
+      </figure>
+      <div class="menu-card-body">
+        <h3 id="item-matcha-title">Matcha Latte</h3>
+        <p>Earthy, creamy, and beautifully green — pure serenity in a cup.</p>
+      </div>
+      <div class="menu-card-price"><span>₱160</span></div>
+    </article>
+  </li>
+
+  <li class="menu-item" role="listitem" data-flavors="sweet,caramel,vanilla,caramel macchiato">
+    <article class="menu-card" aria-labelledby="item-caramel-title">
+      <figure>
+        <img src="images/caramel-macchiato.jpg" alt="Caramel Macchiato" width="320" height="200" />
+        <figcaption class="visually-hidden">Caramel Macchiato</figcaption>
+      </figure>
+      <div class="menu-card-body">
+        <h3 id="item-caramel-title">Caramel Macchiato</h3>
+        <p>Sweet, creamy, and topped with caramel — a popular treat.</p>
+      </div>
+      <div class="menu-card-price"><span>₱170</span></div>
+    </article>
+  </li>
+
+  <!-- second batch, go tehb kaya yan -->
+  <li class="menu-item" role="listitem" data-flavors="oat,creamy,dairy-free,oatmilk">
+    <article class="menu-card" aria-labelledby="item-oatmilk-title">
+      <figure>
+        <img src="images/oatmilk.jpg" alt="Oatmilk Drink" width="320" height="200" />
+        <figcaption class="visually-hidden">Oatmilk Drink</figcaption>
+      </figure>
+      <div class="menu-card-body">
+        <h3 id="item-oatmilk-title">Oatmilk Drink</h3>
+        <p>Delightfully smooth and dairy-free with a nutty twist.</p>
+      </div>
+      <div class="menu-card-price"><span>₱160</span></div>
+    </article>
+  </li>
+
+  <li class="menu-item" role="listitem" data-flavors="refreshing,chilled,coffee,iced">
+    <article class="menu-card" aria-labelledby="item-icedbrew-title">
+      <figure>
+        <img src="images/iced-brew.jpg" alt="Iced Brew" width="320" height="200" />
+        <figcaption class="visually-hidden">Iced Brew</figcaption>
+      </figure>
+      <div class="menu-card-body">
+        <h3 id="item-icedbrew-title">Iced Brew</h3>
+        <p>Bright and refreshing brewed coffee served chilled.</p>
+      </div>
+      <div class="menu-card-price"><span>₱130</span></div>
+    </article>
+  </li>
+
+  <li class="menu-item" role="listitem" data-flavors="sweet,chocolate,mocha">
+    <article class="menu-card" aria-labelledby="item-mocha-title">
+      <figure>
+        <img src="images/mocha.jpg" alt="Mocha" width="320" height="200" />
+        <figcaption class="visually-hidden">Mocha</figcaption>
+      </figure>
+      <div class="menu-card-body">
+        <h3 id="item-mocha-title">Mocha</h3>
+        <p>Chocolatey and rich — a cozy treat for chocolate lovers.</p>
+      </div>
+      <div class="menu-card-price"><span>₱150</span></div>
+    </article>
+  </li>
+
+  <li class="menu-item" role="listitem" data-flavors="cold,smooth,brew">
+    <article class="menu-card" aria-labelledby="item-coldbrew-title">
+      <figure>
+        <img src="images/cold-brew.jpg" alt="Cold Brew" width="320" height="200" />
+        <figcaption class="visually-hidden">Cold Brew</figcaption>
+      </figure>
+      <div class="menu-card-body">
+        <h3 id="item-coldbrew-title">Cold Brew</h3>
+        <p>Slow-brewed for smooth flavor and low acidity.</p>
+      </div>
+      <div class="menu-card-price"><span>₱160</span></div>
+    </article>
+  </li>
+
+  <li class="menu-item" role="listitem" data-flavors="espresso,icecream,affogato">
+    <article class="menu-card" aria-labelledby="item-affogato-title">
+      <figure>
+        <img src="images/affogato.jpg" alt="Affogato" width="320" height="200" />
+        <figcaption class="visually-hidden">Affogato</figcaption>
+      </figure>
+      <div class="menu-card-body">
+        <h3 id="item-affogato-title">Affogato</h3>
+        <p>Espresso poured over creamy vanilla ice cream.</p>
+      </div>
+      <div class="menu-card-price"><span>₱180</span></div>
+    </article>
+  </li>
+
+  <li class="menu-item" role="listitem" data-flavors="sweet,fruity,strawberry">
+    <article class="menu-card" aria-labelledby="item-strawberrymilk-title">
+      <figure>
+        <img src="images/strawberry-milk.jpg" alt="Strawberry Milk" width="320" height="200" />
+        <figcaption class="visually-hidden">Strawberry Milk</figcaption>
+      </figure>
+      <div class="menu-card-body">
+        <h3 id="item-strawberrymilk-title">Strawberry Milk</h3>
+        <p>Sweet and creamy milk infused with strawberry flavor.</p>
+      </div>
+      <div class="menu-card-price"><span>₱130</span></div>
+    </article>
+  </li>
+<!-- 3rd batch -->
+  <li class="menu-item" role="listitem" data-flavors="sweet,tea,boba">
+    <article class="menu-card" aria-labelledby="item-milktea-title">
+      <figure>
+        <img src="images/milktea.jpg" alt="Classic Milk Tea" width="320" height="200" />
+        <figcaption class="visually-hidden">Classic Milk Tea</figcaption>
+      </figure>
+      <div class="menu-card-body">
+        <h3 id="item-milktea-title">Classic Milk Tea</h3>
+        <p>Black tea mixed with creamy milk and chewy pearls.</p>
+      </div>
+      <div class="menu-card-price"><span>₱120</span></div>
+    </article>
+  </li>
+
+  <li class="menu-item" role="listitem" data-flavors="sweet,brown-sugar,boba">
+    <article class="menu-card" aria-labelledby="item-brownsugar-title">
+      <figure>
+        <img src="images/brown-milktea.jpg" alt="Brown Sugar Milk Tea" width="320" height="200" />
+        <figcaption class="visually-hidden">Brown Sugar Milk Tea</figcaption>
+      </figure>
+      <div class="menu-card-body">
+        <h3 id="item-brownsugar-title">Brown Sugar Milk Tea</h3>
+        <p>Rich milk tea with sweet caramelized brown sugar pearls.</p>
+      </div>
+      <div class="menu-card-price"><span>₱140</span></div>
+    </article>
+  </li>
+
+  <li class="menu-item" role="listitem" data-flavors="taro,sweet,creamy">
+    <article class="menu-card" aria-labelledby="item-taro-title">
+      <figure>
+        <img src="images/taro.jpg" alt="Taro Milk Tea" width="320" height="200" />
+        <figcaption class="visually-hidden">Taro Milk Tea</figcaption>
+      </figure>
+      <div class="menu-card-body">
+        <h3 id="item-taro-title">Taro Milk Tea</h3>
+        <p>Creamy and purple — a sweet favorite among milk tea lovers.</p>
+      </div>
+      <div class="menu-card-price"><span>₱130</span></div>
+    </article>
+  </li>
+
+  <li class="menu-item" role="listitem" data-flavors="mango,tea,fruity">
+    <article class="menu-card" aria-labelledby="item-mango-title">
+      <figure>
+        <img src="images/mango.jpg" alt="Mango Fruit Tea" width="320" height="200" />
+        <figcaption class="visually-hidden">Mango Fruit Tea</figcaption>
+      </figure>
+      <div class="menu-card-body">
+        <h3 id="item-mango-title">Mango Fruit Tea</h3>
+        <p>Sweet, tropical mango flavors in a refreshing tea blend.</p>
+      </div>
+      <div class="menu-card-price"><span>₱125</span></div>
+    </article>
+  </li>
+
+  <li class="menu-item" role="listitem" data-flavors="chocolate,cold,frappe">
+    <article class="menu-card" aria-labelledby="item-chocolatefrappe-title">
+      <figure>
+        <img src="images/chocolate.jpg" alt="Chocolate Frappe" width="320" height="200" />
+        <figcaption class="visually-hidden">Chocolate Frappe</figcaption>
+      </figure>
+      <div class="menu-card-body">
+        <h3 id="item-chocolatefrappe-title">Chocolate Frappe</h3>
+        <p>Frosty, chocolatey, and topped with whipped cream.</p>
+      </div>
+      <div class="menu-card-price"><span>₱160</span></div>
+    </article>
+  </li>
+
+  <li class="menu-item" role="listitem" data-flavors="iced,matcha,cream">
+    <article class="menu-card" aria-labelledby="item-icedmatcha-title">
+      <figure>
+        <img src="images/matcha-latte.jpg" alt="Iced Matcha" width="320" height="200" />
+        <figcaption class="visually-hidden">Iced Matcha</figcaption>
+      </figure>
+      <div class="menu-card-body">
+        <h3 id="item-icedmatcha-title">Iced Matcha</h3>
+        <p>Chilled green tea with a creamy twist.</p>
+      </div>
+      <div class="menu-card-price"><span>₱150</span></div>
+    </article>
+  </li>
+
+  <li class="menu-item" role="listitem" data-flavors="tea,milk,honeydew">
+    <article class="menu-card" aria-labelledby="item-honeydew-title">
+      <figure>
+        <img src="images/honey.jpg" alt="Honeydew Milk Tea" width="320" height="200" />
+        <figcaption class="visually-hidden">Honeydew Milk Tea</figcaption>
+      </figure>
+      <div class="menu-card-body">
+        <h3 id="item-honeydew-title">Honeydew Milk Tea</h3>
+        <p>Refreshing blend of tea, milk, and sweet honeydew flavor.</p>
+      </div>
+      <div class="menu-card-price"><span>₱130</span></div>
+    </article>
+  </li>
+
+  <li class="menu-item" role="listitem" data-flavors="thai,tea,sweet">
+    <article class="menu-card" aria-labelledby="item-thaitea-title">
+      <figure>
+        <img src="images/thai.jpg" alt="Thai Tea" width="320" height="200" />
+        <figcaption class="visually-hidden">Thai Tea</figcaption>
+      </figure>
+      <div class="menu-card-body">
+        <h3 id="item-thaitea-title">Thai Tea</h3>
+        <p>Bold and sweet black tea with creamy condensed milk.</p>
+      </div>
+      <div class="menu-card-price"><span>₱130</span></div>
+    </article>
+  </li>
+
+  <li class="menu-item" role="listitem" data-flavors="sweet,fruity,blueberry">
+    <article class="menu-card" aria-labelledby="item-blueberryfrappe-title">
+      <figure>
+        <img src="images/blueberry.jpg" alt="Blueberry Frappe" width="320" height="200" />
+        <figcaption class="visually-hidden">Blueberry Frappe</figcaption>
+      </figure>
+      <div class="menu-card-body">
+        <h3 id="item-blueberryfrappe-title">Blueberry Frappe</h3>
+        <p>Sweet, tangy blueberry flavor in a frosty blended drink.</p>
+      </div>
+      <div class="menu-card-price"><span>₱160</span></div>
+    </article>
+  </li>
+</ul>
+
+  </main>
+
+  <!-- Main JS -->
+  <script src="script.js"></script>
+</body>
+</html>
