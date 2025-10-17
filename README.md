@@ -1,3 +1,6 @@
+#  Live Preview
+[![Live Demo](https://img.shields.io/badge/Live%20Preview-Click%20Here-green)](https://currlei.github.io/Beans-and-Bubbles-G9-WAD-RWD-PROJECT)
+
 # **Beans & Bubbles — Café Website**
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
@@ -54,8 +57,6 @@ The website includes several pages: **Home, About, Menu, Team, Reviews, and Cont
 | **JavaScript (Vanilla JS)** | DOM interactions, sliders, validations |
 | **Font Awesome**            | Icons and UI enhancements |
 | **Google Fonts**            | Typography styling |
-
----
 
 ---
 
