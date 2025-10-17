@@ -41,9 +41,18 @@ The website includes several pages: **Home, About, Menu, Team, Reviews, and Cont
 - Team page displaying member profiles with basic descriptions  
 - Contact section with input fields where users can send feedback or suggestions about the café concept  
 - Smooth Scroll Reveal Effects  
-- Optimized Animations for Performance  
+- Optimized Animations for Performance
 
 ---
+| Page           | Description                                                    |
+| -------------- | -------------------------------------------------------------- |
+| `index.html`   | Hero landing page with call-to-action buttons                  |
+| `about.html`   | Café story + auto-sliding image gallery                        |
+| `menu.html`    | Menu grid with **live search filter** and accessibility labels |
+| `team.html`    | Team member cards with social media links                      |
+| `reviews.html` | Sliding review carousel with progress indicator                |
+| `contact.html` | Form validation, star rating & operating hours                 |
+
 
 ## **Technologies Used**
 
@@ -59,14 +68,21 @@ The website includes several pages: **Home, About, Menu, Team, Reviews, and Cont
 
 ## **How to Run the Project**
 
-### **Option 1: Open Directly**
-- Download or clone the project  
-- Open `index.html` in your browser  
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/currlei/Beans-and-Bubbles-G9-WAD-RWD-PROJECT.git
+   ```
 
-### **Option 2: Run with Live Server (Recommended)**
-- Open the project folder in **Visual Studio Code**  
-- Right-click `index.html`  
-- Click **"Open with Live Server"**  
+2. **Open the folder**
+   ```bash
+   cd Beans-and-Bubbles-G9-WAD-RWD-PROJECT
+   ```
+
+3. **Open the website**
+   - Go to the `HTML/` folder  
+   - Double-click `index.html` to open it in your browser  
+    **No server or backend required — pure HTML, CSS, JS.**
+```
 
 ---
 
@@ -74,12 +90,13 @@ The website includes several pages: **Home, About, Menu, Team, Reviews, and Cont
 
 ```
 beans-and-bubbles/
-├── index.html
-├── about.html
-├── menu.html
-├── team.html
-├── reviews.html
-├── contact.html
+├── HTML/
+│ ├── index.html
+│ ├── about.html
+│ ├── menu.html
+│ ├── team.html
+│ ├── reviews.html
+│ └── contact.html
 ├── style.css
 ├── script.js
 └── images/
