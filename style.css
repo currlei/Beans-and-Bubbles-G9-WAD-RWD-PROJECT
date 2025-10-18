@@ -1,4 +1,3 @@
-style.css
 @import url('https://fonts.googleapis.com/css2?family=Miniver&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Reset & base */
@@ -19,6 +18,8 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
+
+
 
 /* header */
 header {
@@ -47,9 +48,9 @@ header .nav-bar{
 
 .nav-logo {
   display: flex;
-  align-items: center; /* align logo and text vertically */
+  align-items: center; 
   text-decoration: none;
-  gap: 8px; /* small space between logo and text */
+  gap: 8px; 
 }
 
 /* Logo image */
@@ -615,15 +616,24 @@ height: 200px;
   padding: 15px;
   text-align: center;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
+  transition: transform 0.25s ease-out, box-shadow 0.25s ease-out;
+  will-change: transform, box-shadow;
 }
 .menu-item img {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 10px;
+  transition: transform 0.3s ease-out;
 }
+
+.menu-item:hover img {
+  transform: scale(1.08);
+}
+
 .menu-item:hover {
-  transform: scale(1.05);
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 .menu-item span {
   color: #ff6f00;
@@ -660,7 +670,6 @@ height: 200px;
   transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
 }
 
-/* Placeholder color tuned to theme */
 .menu-search::placeholder {
   color: #a86b3f;
   opacity: 0.9;
@@ -693,7 +702,6 @@ height: 200px;
 }
 
 
-/* Hover / focus states */
 .menu-search-button:hover,
 .menu-search-button:focus {
   background: #bb601a;
@@ -713,7 +721,7 @@ height: 200px;
   align-items: start;
 }
 
-/* Individual result card (compact, matches .menu-item aesthetic) */
+/* Individual result card */
 .menu-search-result {
   display: flex;
   gap: 12px;
@@ -752,7 +760,7 @@ height: 200px;
   opacity: 0.95;
 }
 
-/* Price tag to the right */
+/* Price tag  */
 .menu-search-result .result-price {
   color: #ff6f00;
   font-weight: 700;
@@ -760,14 +768,13 @@ height: 200px;
   white-space: nowrap;
 }
 
-/* Hover effect */
 .menu-search-result:hover,
 .menu-search-result:focus-within {
   transform: translateY(-6px);
   box-shadow: 0 14px 30px rgba(0,0,0,0.08);
 }
 
-/* Empty state (no results) */
+
 .menu-search-no-results {
   max-width: 800px;
   margin: 8px auto 40px;
@@ -1060,13 +1067,13 @@ height: 200px;
 }
 .star-rating {
   display: flex;
-  flex-direction: row-reverse; /* so stars fill leftward */
+  flex-direction: row-reverse; 
   justify-content: center;
   gap: 5px;
 }
 
 .star-rating input {
-  display: none; /* hide native radio */
+  display: none; 
 }
 
 /* star look */
@@ -1078,7 +1085,7 @@ height: 200px;
   user-select: none;
 }
 
-/* hover highlight */
+
 .star-rating label:hover,
 .star-rating label:hover ~ label {
   color: gold;
@@ -1491,12 +1498,12 @@ height: 200px;
 
 }
 
-/* ===== FOOTER SECTION ===== */
+/*  FOOTER */
 
 footer {
   background-color: #3b141c;
   color: #fffaf6;
-  padding: 18px 0; /* reduced vertical space */
+  padding: 18px 0; 
   font-family: "Montserrat", sans-serif;
   box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.06);
 }
@@ -1563,8 +1570,8 @@ footer .social-links {
   gap: 14px;
   margin-top: 12px;
   align-items: center;
-  justify-content: center; /* Center the links horizontally */
-  flex-wrap: wrap; /* allow wrap on smaller screens */
+  justify-content: center; 
+  flex-wrap: wrap; 
 }
 
 footer .social-links a {
@@ -1588,7 +1595,7 @@ footer .social-links a:focus {
   outline: none;
 }
 
-/* copyright / bottom */
+/* copyright */
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.10);
   margin-top: 20px;
@@ -1643,3 +1650,25 @@ footer .social-links a:focus {
     font-size: 0.85rem;
   }
 }
+
+
+/* ANIMATIONS !! */
+section,
+.menu-item,
+.review-card,
+.team-member,
+.about-image-frame,
+.contact-form,
+.hero-details,
+.hero-image-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
